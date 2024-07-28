@@ -73,18 +73,20 @@ public class Main {
 //        for(int i=1;i <=n;i++) {
 //            System.out.print(i+" ");
 //        }
-        int j=1;
-        while(j<=10){
-            System.out.print(j+" ");
-            j++;
-        }
-        System.out.println();
-        int k=1;
-        do{
-            System.out.print(k+" ");
-            k++;
-        }
-        while(k<=10);
-
+//        int j=1;
+//        while(j<=10){
+//            System.out.print(j+" ");
+//            j++;
+//        }
+//        System.out.println();
+//        int k=1;
+//        do{
+//            System.out.print(k+" ");
+//            k++;
+//        }
+//        while(k<=10);
+        int x=10000;
+        Integer y=10000;
+        System.out.println(x!==y);
     }
 }
