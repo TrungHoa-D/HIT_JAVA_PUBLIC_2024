@@ -40,9 +40,31 @@ public class Main {
 //        char a='A';
 //        System.out.println(a+", "+(char)(a+32));
         Scanner sc = new Scanner(System.in);
-        int a= sc.nextInt();sc.nextLine();
-        String b= sc.nextLine();
-        System.out.println("a: "+a+"\n"+"b: "+b+"\n");
+//        int a= sc.nextInt();sc.nextLine();
+//        String b= sc.nextLine();
+//        System.out.println("a: "+a+"\n"+"b: "+b+"\n");
+        int a= (int) (Math.random()*100)%11;
+        int b= (int) (Math.random()*100)%11;
+        int c= (int) (Math.random()*100)%21;
+        int w= (int) (Math.random()*10)%2;
+        if(w==0) c=a+b;
+        System.out.println(a+" + "+b+" = "+c);
+        System.out.print("Phép tính trên đúng hay sai (Y/N):");
+        char x= sc.nextLine().charAt(0);
+        if(a+b==c) {
+            if(x=='Y') {
+                System.out.println("Chính xác!");
+            }
+            else if(x=='N') {
+                System.out.println("Sai!");
+            }
+        }
+        else{
+            if(x=='Y') {
+                System.out.println("Sai!");
+            }
+            else System.out.println("Chính xác!");
+        }
     }
 
 }
